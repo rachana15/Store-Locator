@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#map {
+  height: 100vh;
+}
+
+.app__title {
+  position: absolute;
+  font-size: 80px;
+  z-index: 10;
+  top: 50px;
+  left: 50px;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.search__container {
+  position: absolute;
+  background-color: #454e53;
+  border-radius: 30px;
+  width: 400px;
+  height: 50px;
+  z-index: 10;
+  top: 200px;
+  left: 50px;
+}
+
+.search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search input {
+  flex-grow: 1;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.search i {
+  color: white;
+  font-size: 25px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.list__container {
+  width: 400px;
+  border-radius: 30px;
+  background-color: white;
+  /* background-color: #454e53; */
+  top: 300px;
+  position: absolute;
+  z-index: 10;
+  left: 50px;
+  bottom: 20px;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.store-info-window {
+  z-index: 20;
+  min-width: 300px;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.store-info-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.store-info-open-status {
+  margin-top: 6px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.store-info-address,
+.store-info-phone {
+  margin-top: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.store-info-address .icon,
+.store-info-phone .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #454e53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.store-info-phone a,
+.store-info-address {
+  color: #514c4c;
+  text-decoration: none;
+}
+
+.stores_list {
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.store_container {
+  border-bottom: 1px solid #979797;
+  display: flex;
+}
+
+.store_info_container {
+  flex-grow: 1;
+}
+
+.store_address {
+  font-size: 21px;
+  color: #514c4c;
+  margin-top: 30px;
+}
+
+.store_address span {
+  display: block;
+}
+
+.store_phoneNumber {
+  color: #b5adad;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.store_number_container {
+  display: flex;
+  align-items: center;
+}
+
+.store_number {
+  width: 30px;
+  height: 30px;
+  background-color: #454e53;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store_container_background {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  /* background-color: #cccccc87; */
+  border-radius: 18px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.store_container_background:hover {
+  -color: #cccccc87;
+}
+
+.intro {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.enter_zip {
+  color: #514c4c;
+  font-size: 22px;
+}
+
+.find_stores {
+  color: #198581;
+  font-size: 20px;
+}
+
+.no_stores_found {
+  height: 100%;
+  display: fles;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #514c4c;
+  font-size: 20px;
+}
